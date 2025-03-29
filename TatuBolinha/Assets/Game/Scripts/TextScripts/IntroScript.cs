@@ -21,7 +21,7 @@ public class IntroScript : MonoBehaviour
     
     void Update()
     {
-        overlapImage(CurrentImage[0], CurrentImage[1], 1);
+        //overlapImage(CurrentImage[0], CurrentImage[1], 1);
         if (textIndex == currentText.Length - 1) return;
         if (boxText.text.Length == currentText[textIndex].Text.ToCharArray().Length - 1)
         {
@@ -44,7 +44,7 @@ public class IntroScript : MonoBehaviour
     private void nextSentence() {
 
     }
-    private void overlapImage(Image currentImage, Image nextImage, float tempoDeSumico) {
+    /*private void overlapImage(Image currentImage, Image nextImage, float tempoDeSumico) {
         float currenteImageColor = currentImage.GetComponent<Image>().color.a;  
         float nextImageColor = currentImage.GetComponent<Image>().color.a;  
         float contador = 0;

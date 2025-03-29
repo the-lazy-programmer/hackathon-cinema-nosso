@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6cc3e41a1b78f4db9ea5e4c236228c, type: 3}
+  m_Name: Player Controle Stats
+  m_EditorClassIdentifier: 
+  VelMaxAndar: 12.5
+  AceleracaoChao: 5
+  DesaceleracaoChao: 20
+  AceleracaoNoAr: 5
+  DesaceleracaoNoAr: 5
+  VelMaxCorrer: 20
+  LayerChao:
+    serializedVersion: 2
+    m_Bits: 0
+  DeteccaoChaoComprimento: 0.02
+  DeteccaoCabecaComprimento: 0.02
+  LarguraCabeca: 0.75

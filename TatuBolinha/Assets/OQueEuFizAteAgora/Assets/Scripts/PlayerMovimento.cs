@@ -51,6 +51,7 @@ public class PlayerMovimento : MonoBehaviour
         olhandoParaDireita = true;
 
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
@@ -316,7 +317,11 @@ public class PlayerMovimento : MonoBehaviour
         // Limitando A Velocidade de Queda
         VelocidadeVertical = Mathf.Clamp(VelocidadeVertical, -MoveStats.VelMaxAoCair, 50f);
 
+<<<<<<< Updated upstream
         rb.velocity = new Vector2(rb.velocity.x, VelocidadeVertical);
+=======
+        rb.velocity = new Vector2(rb.velocity.x , VelocidadeVertical);
+>>>>>>> Stashed changes
     }
 
     private void DrawArcoDoPulo(float velAndar, Color gizmoCor)

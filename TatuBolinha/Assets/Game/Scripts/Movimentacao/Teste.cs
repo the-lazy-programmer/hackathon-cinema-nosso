@@ -8,10 +8,12 @@ public class Teste : MonoBehaviour
     private InputSystem_Actions action;
     private CharacterMovement2D characterMovement;
     private SpriteRenderer spriteRenderer;
+    private AnimacaoController AnimControler;
     private void Start() {
          action = new InputSystem_Actions();
         action.Enable();
-       characterMovement = GetComponent<CharacterMovement2D>();
+        characterMovement = GetComponent<CharacterMovement2D>();
+        AnimControler = GetComponent<AnimacaoController>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
     private void Jump_performed(InputAction.CallbackContext context) {
@@ -24,6 +26,7 @@ public class Teste : MonoBehaviour
         Vector2 Movimento = action.Platformer2D.Move2D.ReadValue<Vector2>();
         characterMovement.ProcessMovementInput(Movimento);
         flip(Movimento.x);
+        AnimControler.WalkAnim(Movimento.x);
         if (action.Platformer2D.Jump.WasPerformedThisFrame())
         {
             characterMovement.Jump();

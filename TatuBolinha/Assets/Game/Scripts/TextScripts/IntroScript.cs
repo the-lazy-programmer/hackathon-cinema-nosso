@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class IntroScript : MonoBehaviour
@@ -11,7 +13,7 @@ public class IntroScript : MonoBehaviour
     private int textIndex = 0;
 
     public float cronometro = 0;
-
+    public UnityEvent MudarDeCena;
     void Start()
     {
         StartCoroutine(TypeSentence());
@@ -22,6 +24,9 @@ public class IntroScript : MonoBehaviour
     void Update()
     {
         cronometro += Time.deltaTime;
+        if (cronometro >= 15){
+            MudarDeCena.Invoke();
+        }
         //overlapImage(CurrentImage[0], CurrentImage[1], 1);
         if (textIndex == currentText.Length - 1) return;
         if (boxText.text.Length == currentText[textIndex].Text.ToCharArray().Length - 1)

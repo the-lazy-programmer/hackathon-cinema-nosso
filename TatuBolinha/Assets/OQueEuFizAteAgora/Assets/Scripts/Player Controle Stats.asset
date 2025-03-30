@@ -20,7 +20,7 @@ MonoBehaviour:
   VelMaxCorrer: 20
   LayerChao:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
   DeteccaoChaoComprimento: 0.02
   DeteccaoCabecaComprimento: 0.02
   LarguraCabeca: 0.75

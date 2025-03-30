@@ -12,7 +12,7 @@ public class PlayerMovimento : MonoBehaviour
     public PlayerControleStats MoveStats;
     [SerializeField] private Collider2D peCollisao;
     [SerializeField] private Collider2D corpoCollisao;
-
+   
     Rigidbody2D rb;
 
     // Variáveis de movimento:
@@ -319,6 +319,7 @@ public class PlayerMovimento : MonoBehaviour
 
         rb.velocity = new Vector2(rb.velocity.x, VelocidadeVertical);
         rb.velocity = new Vector2(rb.velocity.x , VelocidadeVertical);
+
     }
 
     private void DrawArcoDoPulo(float velAndar, Color gizmoCor)
@@ -499,6 +500,6 @@ public class PlayerMovimento : MonoBehaviour
     }
 
     #endregion
-
+    
 
 }

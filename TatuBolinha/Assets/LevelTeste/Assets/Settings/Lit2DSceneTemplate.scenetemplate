@@ -66,25 +66,15 @@ MonoBehaviour:
     the 2D Renderer in Universal RP.
   preview: {fileID: -3604256930052969394}
   dependencies:
-  - dependency: {fileID: 2800000, guid: e44200b439bc7ac41b4b050efad2ffa4, type: 3}
-    instantiationMode: 0
-  - dependency: {fileID: 9100000, guid: 29ddb9ae1efe766469f14c1c7153a86a, type: 2}
-    instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 5d0c295be41718d4fa9093f28801f0ea, type: 2}
     instantiationMode: 1
   - dependency: {fileID: 11400000, guid: dba7f843b4629d149972024d8e2df25a, type: 2}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 940afe295721ea849b72e50b00d41f1c, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 0303833012fcba24db2249814bc4a91a, type: 3}
-    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 21fa916c93bd0524d8b4ecdd6050147d, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 447ff82268c249248aa03e9b5b821da9, type: 3}
-    instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 8ce345e57310d5e4bbb8b588f1fb10a9, type: 2}
-    instantiationMode: 1
-  - dependency: {fileID: 11400000, guid: 0c52f8cf43e7a5e459b3fc1f29664200, type: 2}
     instantiationMode: 1
   - dependency: {fileID: 2100000, guid: 7c649e2da5499ca4d9f10bddf7b25c09, type: 2}
     instantiationMode: 0
@@ -92,11 +82,9 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: df805807732ac3443aecd28faaf9086f, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 7400000, guid: 68bde1f61f9378f4a986cfea2edd64aa, type: 2}
-    instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 05b0163af36c14f44bdb29b9f5a42646, type: 3}
-    instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 650d05cea0cae3b40b6dee591c3bd2a8, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 003c4b4522f8a6f4b919c1920d4833a0, type: 2}
     instantiationMode: 1
@@ -106,8 +94,38 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: ce21f51c55f5d324ca80aa621093389f, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 230ed0862d7583f40bfaf842d4289b1e, type: 2}
     instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: e44200b439bc7ac41b4b050efad2ffa4, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 9100000, guid: 29ddb9ae1efe766469f14c1c7153a86a, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 701c2f6c6ce195942b78444412447a35, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 6200000, guid: e55bf45c5b9f04f40aeab9f3b95b6351, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 0303833012fcba24db2249814bc4a91a, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 11400000, guid: 995761d131de1bd49b3e98c3f472a687, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 447ff82268c249248aa03e9b5b821da9, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 11400000, guid: a1a8fb3c3e0e11a48b0c86373112b504, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 11400000, guid: 0c52f8cf43e7a5e459b3fc1f29664200, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 7173225249046081126, guid: da7a4ba41ed88554daf6b3d6ed051f87, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 05b0163af36c14f44bdb29b9f5a42646, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2927187148170093770, guid: 2604d4ea75b224346ad32a6aa24c0af9, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 650d05cea0cae3b40b6dee591c3bd2a8, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}
   addToDefaults: 1

@@ -10,11 +10,12 @@ public class AnimacaoController : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
     }
 
-    void Update()
-    {
-        
-    }
     public void WalkAnim(float Magnetude) {
-        anim.SetFloat("Walk", Magnetude);
+        if (Magnetude!= 0)
+        {
+            anim.SetBool("BoolWalk" , true);
+          
+        } else anim.SetBool("BoolWalk" , false);
+        
     }
 }

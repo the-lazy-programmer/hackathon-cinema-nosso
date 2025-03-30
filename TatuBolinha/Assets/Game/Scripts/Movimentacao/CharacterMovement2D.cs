@@ -51,7 +51,7 @@ namespace Platformer2D.Character
 
         public float GroundRaycastDistance { get { return groundedRaycastDistance; } }
 
-        public Vector2 CurrentVelocity { get { return currentVelocity; } }
+        public Vector2 CurrentVelocity { get { return currentVelocity; }set { CurrentVelocity = value; } }
 
         public Rigidbody2D RigidBody { get { return rigidbody2d; } }
 
@@ -90,7 +90,13 @@ namespace Platformer2D.Character
 
         void ApplyGravity()
         {
+                                //Velocidade máxima
+            if (currentVelocity.y < -10) return;
             currentVelocity.y -= Gravity * Time.fixedDeltaTime;
+        }
+        public void Empurrão() {
+            currentVelocity.y = 10;
+            
         }
 
         protected bool CanJump()
@@ -159,9 +165,9 @@ namespace Platformer2D.Character
             int raycastCount = 3;
             Vector2[] raycastPositions = new Vector2[raycastCount];
 
-            raycastPositions[0] = GetColliderBottom() + Vector2.left * ColliderInfo.Size.x * 0.5f;
+            raycastPositions[0] = GetColliderBottom() + Vector2.left * ColliderInfo.Size.x * 0.1f;
             raycastPositions[1] = GetColliderBottom();
-            raycastPositions[2] = GetColliderBottom() + Vector2.right * ColliderInfo.Size.x * 0.5f;
+            raycastPositions[2] = GetColliderBottom() + Vector2.right * ColliderInfo.Size.x * 0.1f;
 
             RaycastHit2D[] hitBuffer = new RaycastHit2D[5];
             float raycastDistance = ColliderInfo.Size.x * 0.5f + groundedRaycastDistance * 2f;

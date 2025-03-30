@@ -93,13 +93,13 @@ public class PlayerMovimento : MonoBehaviour
             }
 
             velMovimento = Vector2.Lerp(velMovimento, targetVelocity, aceleracao * Time.fixedDeltaTime);
-            rb.linearVelocity = new Vector2(velMovimento.x, rb.linearVelocityY);
+            rb.velocity = new Vector2(velMovimento.x, rb.velocity.y);
         }
 
         else if (moveInput == Vector2.zero)
         {
             velMovimento = Vector2.Lerp(velMovimento, Vector2.zero, desaceleracao * Time.fixedDeltaTime);
-            rb.linearVelocity = new Vector2(velMovimento.x, velMovimento.y);
+            rb.velocity = new Vector2(velMovimento.x, velMovimento.y);
         }
     }
 
@@ -316,7 +316,7 @@ public class PlayerMovimento : MonoBehaviour
         // Limitando A Velocidade de Queda
         VelocidadeVertical = Mathf.Clamp(VelocidadeVertical, -MoveStats.VelMaxAoCair, 50f);
 
-        rb.linearVelocity = new Vector2(rb.linearVelocityX, VelocidadeVertical);
+        rb.velocity = new Vector2(rb.velocity.x, VelocidadeVertical);
     }
 
     private void DrawArcoDoPulo(float velAndar, Color gizmoCor)

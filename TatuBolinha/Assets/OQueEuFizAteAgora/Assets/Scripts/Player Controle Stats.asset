@@ -20,7 +20,26 @@ MonoBehaviour:
   VelMaxCorrer: 20
   LayerChao:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   DeteccaoChaoComprimento: 0.02
   DeteccaoCabecaComprimento: 0.02
   LarguraCabeca: 0.75
+  PuloAltura: 6.5
+  PuloAlturaFatorDeCompensacao: 1.054
+  TempoAtePicoDoPulo: 0.35
+  GravidadeAoCairMultiplicador: 2
+  VelMaxAoCair: 26
+  NumDePulosPermitidos: 2
+  TempoParaCancelamento: 0.027
+  ComecoDoPico: 0.97
+  TempoParadoNoPico: 0.075
+  TempoDeBuffer: 0.125
+  CoyoteTime: 0.1
+  DebugMostrarEstaNoChao: 0
+  DebugMostrarCabecaHitbox: 0
+  MostrarArcoDoPulo: 0
+  MostrarArcoDePuloComCorrer: 0
+  PararComAColisao: 1
+  DrawPelaDireita: 1
+  ResolucaoDoArco: 20
+  PassosDeVisualisacao: 90
